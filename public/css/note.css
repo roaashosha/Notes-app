@@ -1,0 +1,61 @@
+/* Main container styling */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Note container styling */
+main p {
+    background-color: #e9ecef; 
+    padding: 15px;
+    margin: 10px 0; 
+    border-left: 5px solid #007bff; 
+    border-radius: 4px;
+    width: 100%; 
+    max-width: 600px; 
+    box-sizing: border-box; 
+    transition: transform 0.2s;
+}
+
+/* Button container styling */
+.button-container {
+    margin-top: 10px; /* Space above the button container */
+    display: flex; /* Align buttons horizontally */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Button styling */
+button, a {
+    text-decoration: none;
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.2s; 
+}
+
+/* Update button styling */
+a.update {
+    background-color: #28a745; /* Green background for Update */
+    color: white; 
+}
+
+a.update:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Delete button styling */
+button.delete {
+    background-color: #dc3545; /* Red background for Delete */
+    color: white; 
+    font-weight: bold; /* Make text bold */
+}
+
+button.delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+button.delete:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5); /* Add focus outline */
+}
